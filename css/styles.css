@@ -1,0 +1,296 @@
+/* small screen */
+
+.topbg {
+  /* margin: 0;
+  width: 100%;*/
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+/* 下線で仕切る */
+.line {
+  border-bottom: solid;
+}
+
+/* 表のスタイル */
+/* table {
+  border-collaspe: collaspe;
+}
+td {
+  border-solid 1px;
+  padding: 0.5em;
+} */
+
+
+/* 自己紹介ページのスタイル */
+.features {
+	background: #fff;
+}
+
+.feature {
+	margin-bottom: 60px;
+}
+
+/* .features h1 {
+	text-align: center;
+	font-weight: normal;
+	padding: 55px;
+
+} */
+
+.feature img {
+	width: 100%;
+}
+
+
+/* グーグルマップのスタイル */
+.ggmap {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
+
+body{
+  background: rgb(122, 148, 240);
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.title {
+  font-size: 34px;
+}
+
+p{
+  line-height: 2;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 背景のいろ */
+
+/* 下部のカテゴリページ */
+.category {
+  width: 95%;
+  margin: 0 auto;
+}
+
+body > section {
+  padding: 60px 0;
+}
+
+body > section:nth-of-type(odd) {
+	background: #fff;
+}
+
+
+.section-title {
+  text-align: center;
+  font-weight: normal;
+  margin: 0 0 60px;
+}
+
+
+header h1{
+  font-size: 28px;
+  font-weight: normal;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .9);
+	color: #fff;
+	display: none;
+}
+
+#menu.shown{
+	display: block;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+#menu li {
+	line-height: 2;
+}
+
+#menu a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#open_menu{
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#close_menu{
+	padding: 15px;
+	float: right;
+	cursor: pointer;
+}
+
+
+
+
+.category-item img{
+  width: 95%
+}
+
+.category-item p {
+  text-align: center;
+  font-size: 28px;
+}
+
+/* .category-item:not(:last-child){
+  margin-bottom: 60px;
+} */
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+/* medium screen */
+@media (min-width: 570px){
+
+
+/* 自己紹介ページのスタイル */
+  .feature {
+  overflow: hidden;
+}
+
+.feature img {
+  width: 50%;
+}
+
+.feature p {
+  width: 45%;
+}
+
+.feature p {
+  float: right;
+  padding-left: 5
+}
+/* .feature:nth-of-type(even) p {
+  float: left;
+  padding-right: 5
+} */
+
+
+
+
+
+  .title {
+    font-size: 34px;
+  }
+
+
+
+	.category .flex{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.category-item{
+		width: 20%;
+	}
+
+}
+
+
+/* large screen */
+
+@media (min-width: 912px){
+
+  .title {
+    font-size: 34px;
+  }
+
+  .category .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .category-item{
+    width: 22%;
+  }
+
+	.container{
+		width: 820px;
+    /* width: 80%; */
+	}
+
+
+  /* 研究室紹介 */
+  .introduction {
+    background: #783;
+  }
+
+  .topbg {
+    /* margin: 0;
+    width: 100%;*/
+    text-align: center;
+    width: 90%;
+    height: auto;
+  }
+
+  /* .intdoduction img {
+    max-width: 100%;
+    height: auto;
+  } */
+
+	#open_menu{
+		display: none;
+	}
+	#close_menu{
+		display: none;
+	}
+
+	#menu {
+		display: block;
+		position: static;
+		background: transparent;
+		color: #333;
+	}
+
+	#menu ul{
+		/* padding: 0; */
+		float: right;
+	}
+
+	#menu li{
+		display: inline-block;
+		width: 60px;
+		text-align: center;
+	}
+}
